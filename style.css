@@ -1,0 +1,127 @@
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+  .quiz-container {
+      background: #fff;
+      width: 750px;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.8s ease-in-out;
+      overflow-y: auto;
+      max-height: 90vh;
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+  }
+
+  .progress {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #555;
+  }
+
+  .question {
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #222;
+  }
+
+  .options label {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 16px;
+  }
+
+  .options input {
+      margin-right: 10px;
+  }
+
+  .options label:hover {
+      background: #f1f9ff;
+      border-color: #3498db;
+  }
+
+  .btn-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  button:hover {
+      background: #217dbb;
+  }
+
+  .result {
+      display: none;
+      font-size: 18px;
+      margin-top: 20px;
+  }
+
+  .result h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #27ae60;
+  }
+
+  .answer-review {
+      margin-bottom: 15px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+  }
+
+  .correct {
+      background: #eafaf1;
+      border-left: 6px solid #2ecc71;
+  }
+
+  .wrong {
+      background: #fdecea;
+      border-left: 6px solid #e74c3c;
+  }
+
+  .correct-answer {
+      font-weight: bold;
+      color: #2c3e50;
+  }
