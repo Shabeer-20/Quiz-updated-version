@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Competition</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Page Quiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="quiz-container">
-    <h2>HTML, CSS & JS Quiz</h2>
-    <div class="progress" id="progress">Question 1 of 10</div>
-    <div id="quiz">
-      <div class="question" id="question">Question text</div>
-      <div class="options" id="options"></div>
-    </div>
-    <div class="btn-container">
-      <button onclick="prevQuestion()">⬅ Prev</button>
-      <button onclick="nextQuestion()">Next ➡</button>
-    </div>
-    <div class="result" id="result"></div>
-  </div>
-  
+  <header>
+    <h1>HTML, CSS & JS Quiz</h1>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <div id="quizContainer"></div>
+      <button type="submit" id="submitBtn">Submit Quiz</button>
+    </form>
+    <div id="resultContainer"></div>
+  </main>
+
+
+  <script src="script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
